@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Teams Dropdown</title>
+    <style>
+		ul {
+			padding: 0;
+			margin: 0;
+			background: #333;
+            float:left;
+            width:100%;
+		}
+	
+		li {
+            width:20%;
+			float: left;
+			display: inline;
+			position: relative;
+            color: white;
+			padding: 14px 16px;
+            cursor: pointer;
+		}
+	
+		ul ul {
+            width:100%;
+			position: absolute;
+			left: 0;
+			top: 100%;
+			background: #777;
+			display: none;
+		}
+        li li {
+            width:100%;
+        }
+		li:hover {
+        	background-color: #111;
+    	}
+		li:hover > ul{
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <p>NFL</p>
+            <ul>
+                <li>Arizona Cardinals</li>
+                <li>Atlanta Falcons</li>
+                <li>Baltimore Ravens</li>
+                <li>Buffalo Bills</li>
+            </ul>
+        </li>
+        <li>
+            <p>MLB</p>
+            <ul>
+                <li>Arizona Diamondbacks</li>
+                <li>Atlanta Braves</li>
+                <li>Baltimore Orioles</li>
+            </ul>
+        </li>
+        <li>
+            <p>NBA</p>
+            <ul>
+                <li>Atlanta Hawks</li>
+                <li>Boston Celtics</li>
+            </ul>
+        </li>
+        <li>
+            <p>NHL</p>
+            <ul>
+                <li>Anaheim Ducks</li>
+                <li>Arizona Coyotes</li>
+                <li>Boston Bruins</li>
+                <li>Buffalo Sabres</li>
+                <li>Calgary Flames</li>
+                <li>Carolina Hurricanes</li>
+                <li>Chicago Blackhawks</li>
+                <li>Colorado Avalanche</li>
+                <li>Columbus Blue Jackets</li>
+                <li>Dallas Stars</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
